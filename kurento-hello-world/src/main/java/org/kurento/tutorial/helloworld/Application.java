@@ -55,6 +55,10 @@ public class Application implements WebSocketConfigurer
   public void registerWebSocketHandlers(WebSocketHandlerRegistry registry)
   {
     registry.addHandler(handler(), "/helloworld");
+/*
+    addHandler(WebSocketHandler webSocketHandler, String... paths)
+    Configure a WebSocketHandler at the specified URL paths.
+*/
   }
 
   public static void main(String[] args) throws Exception
